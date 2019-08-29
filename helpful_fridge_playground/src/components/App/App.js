@@ -13,12 +13,14 @@ function App() {
   return (
       <HashRouter>
         <Navigation/>
+        <div className={"container"}>
         <Switch>
         <Route exact path={"/"} component={LandingPage}/>
         <Route path={"/about"} component={AboutMe}/>
         <Route path={"/fridge"} component={FridgeBox}/>
         <Route component={NotFound}/>
         </Switch>
+      </div>
       </HashRouter>
   );
 }

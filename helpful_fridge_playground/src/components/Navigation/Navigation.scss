@@ -1,28 +1,73 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
+.navigation{
+  background-color: (map_get($colors,"violet"));
+}
 
 .center{
-  width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: (map_get($colors,"silver"));
+
   .logo {
-    width:10%;
-    background-color: (map_get($colors,"dTurqoise"));
-    border: 1px solid (map_get($colors, "turqoise"));
-        border-radius: 20%;
-    height: 60%;
-    font-size: 1rem;
-   text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url("./Helpful.png");
+    position: relative;
+    margin-left: 60px;
+
+
   }
+.logo:before{
+    position:absolute;
+    content: "";
+    width: 4.2rem;
+    height: 4.2rem;
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./snow.png");
+    box-sizing: border-box;
+    margin-left: -60px;
+    border-radius: 50%;
+    animation: rotate-center 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+
+
   .nav_list {
-    width: 30%;
+    width: 40%;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+
   }
 
 }

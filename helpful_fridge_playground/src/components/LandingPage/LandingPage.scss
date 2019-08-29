@@ -4,28 +4,65 @@
 header{
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 400px;
   justify-content: center;
   align-items: center;
-  h1{
+  .focus-in-expand {
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
     justify-content: center;
-    color: red;
+    color: ghostwhite;
+    font-size: 5rem;
+
+
+    }
+  @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
 }
 
 .main{
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
+
   .go_to_fridge{
     display: flex;
    justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
-    background-color: #8e44ab;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: ghostwhite;  background-color: map_get($colors,"sun")
+
   }
 }
-
