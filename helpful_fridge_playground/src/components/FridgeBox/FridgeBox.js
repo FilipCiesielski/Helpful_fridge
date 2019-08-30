@@ -20,25 +20,32 @@ class FridgeBox extends Component{
 
 
 class Fridge extends Component {
-    state={
-        class1:"door",
-        class2:"",
-        class3:"backDoor"
+    constructor(props){
+        super(props);
+        this.state={
+            class1:"door",
+            class2:"",
+            class3:"hidden"
+        }
+        this.myRef = React.createRef();
+
     }
 
     handleOpenDoor=()=>{
         console.log("elo")
-this.setState({class1:"doorOpen ",class2:"hidden"});
+// this.setState({class1:"doorOpen ",class2:"hidden"});
+        this.myRef.current.classList.toggle("doorOpen");
+        console.log(this.myRef.current)
     }
-       render() {
+         render() {
         return (
             <div className={"fridge"}>
-                <div className={"backDoor"} onClick={this.handleCloseDoor}>
+                <div className={"backDoor"} >
                     <span className={this.state.class2} >SWEG</span>
-                    <div className={this.state.class1} onClick={this.handleOpenDoor}></div>
+                    <div className="door" ref={this.myRef}  onClick={this.handleOpenDoor}></div>
             </div>
                 <div className={"form_search"}>
-                    tu przsssssssekarzsssssssssse propsy z ssssssssssssformassssssssssssssssssssssssss
+                    tu przsssssssekarzsssssssssse propsy z sssssssssfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsssformassssssssssssssssssssssssss
                 </div>
             </div>
         )
