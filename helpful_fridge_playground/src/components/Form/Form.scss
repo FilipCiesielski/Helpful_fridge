@@ -20,7 +20,43 @@
 
 .search_result{
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+       width:76%;
+    height: 600px;
+   margin-top: -650px;
+  margin-left: 255px;
+
+
+  }
+
+.recipe_name{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style-type: none;
+  color: ghostwhite;
+
+}
+
+.list{
+  list-style-type: none;
+  color: ghostwhite;
+
+}
+.method{
+  color: ghostwhite;
+}
+
+.search_form{
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+width: 230px;
+  flex-direction: column;
+  margin-top: -400px;
+  margin-left: 100px;
+
+
 }

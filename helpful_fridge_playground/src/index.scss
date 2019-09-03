@@ -1,9 +1,7 @@
 @import "./SCSS/generic/reset";
 @import "./SCSS/elements/colors";
-body {
-  font-family:'Comfortaa', cursive;
-  background-color: map_get($colors,"blue");
-}
+@import "./SCSS/elements/body";
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

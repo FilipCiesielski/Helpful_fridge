@@ -35,18 +35,17 @@ class Fridge extends Component {
         console.log("elo")
 // this.setState({class1:"doorOpen ",class2:"hidden"});
         this.myRef.current.classList.toggle("doorOpen");
+        this.setState({class2:"hidden"})
         console.log(this.myRef.current)
     }
          render() {
         return (
             <div className={"fridge"}>
                 <div className={"backDoor"} >
-                    <span className={this.state.class2} >SWEG</span>
+
                     <div className="door" ref={this.myRef}  onClick={this.handleOpenDoor}></div>
             </div>
-                <div className={"form_search"}>
-                    tu przsssssssekarzsssssssssse propsy z sssssssssfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsssformassssssssssssssssssssssssss
-                </div>
+
             </div>
         )
     }

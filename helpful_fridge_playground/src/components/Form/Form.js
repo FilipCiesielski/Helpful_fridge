@@ -5,7 +5,7 @@ import "./Form.scss"
 
 class Form extends Component{
     state={
-    response:"",
+    response:null,
         recipe:"",
         name:"",
         ingredient1:"",
@@ -16,11 +16,17 @@ class Form extends Component{
         method:null
 
     };
-fetchData=()=>{
-    fetch(`https://www.themealdb.com/api/json/v2/8673533/filter.php?i=${this.state.ingredient1},${this.state.ingredient2},${this.state.ingredient3}`)
-.then(resp => resp.json())
-.then(resp => {this.setState({response: resp})    })
-}
+
+
+
+
+        fetchData = () => {
+            fetch(`https://www.themealdb.com/api/json/v2/8673533/filter.php?i=${this.state.ingredient1},${this.state.ingredient2},${this.state.ingredient3}`)
+                .then(resp => resp.json())
+                .then(resp => {
+                    this.setState({response: resp})
+                })
+        }
 
 handleOnClick=(strMeal)=>{
         fetch(`https://www.themealdb.com/api/json/v2/8673533/search.php?s=${strMeal}`)
@@ -34,7 +40,7 @@ handleOnClick=(strMeal)=>{
                         console.log(item,meal[item])
                         newIngerdiens.push(meal[item])
                     }
-                    this.setState({method:newIngerdiens})
+                    this.setState({ingredients:newIngerdiens})
                 }
                 let newMeasure=[];
                 for (let item in meal){
@@ -50,7 +56,7 @@ handleOnClick=(strMeal)=>{
                         console.log(item,meal[item])
                         newMethod.push(meal[item])
                     }
-                    this.setState({ingredients:newMethod})
+                    this.setState({method:newMethod})
                 }
 
 
@@ -75,42 +81,47 @@ handleOnChange1=e=>{
     };
 
     render(){
-    // {
-    //     console.log(this.state.recipe );
-    //
-    //     let items = meal
-    //
-    //
-    //     for (let item in this.state.recipe.meals[0]){
-    //         return <li>meal[item])</li>
-    //     }
-
-
-        return (
+                    console.log("TU",this.state);
+         return (
             <>
-                <div className={"search_result"}>
-                <ul>
-                    {(this.state.response==="")?null:this.state.response.meals.map((meal)=><li onClick={()=>this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)}
-                </ul>
-                <div>
-                    {(this.state.recipe==="")?null:this.state.recipe.meals[0]["strIngredient1"]}
-                </div>
-                    <div>{
-                        // items
-                    }</div>
+                <div className={"search_result "}>
+                    <div className={"recipe_name"}    >
+                        <ul>
+
+                    {
+
+                        (this.state.response===null)?null :this.state.response.meals.map((meal)=><li onClick={()=>this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
+
+                    }
+                        </ul>
                     </div>
+                <div className={"ingredient_list"}>
+                    <ul className={"list"}>
+                        {(this.state.ingredients===null)? null:this.state.ingredients.map((ingr)=><li>{ingr}</li>)}
+                    </ul>
+                </div>
+                   <div className={"measure_list"}>
+                       <ul className={"list"}>
+                              {(this.state.measure===null)? null:this.state.measure.map((mea)=><li>{mea}</li>)}
+                       </ul>
+                   </div>
+                    <div className={"method"}>
+                        {(this.state.method===null)? null:this.state.method.map((met)=><p>{met}</p>)}
+                    </div>
+                    </div>
+                
                 <section className={"search_form"}>
                     <form onSubmit={this.handleSubmit}>
                         <label>ingredient
-                            <input type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
+                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
                         </label>
                         <label>ingredient
-                            <input type="text" name="name" value={this.state.ingredient2} onChange={this.handleOnChange2}/>
+                            <input  className={"input_style"}type="text" name="name" value={this.state.ingredient2} onChange={this.handleOnChange2}/>
                         </label>
                         <label>ingredient
-                            <input type="text" name="name" value={this.state.ingredient3} onChange={this.handleOnChange3}/>
+                            <input  className={"input_style"} type="text" name="name" value={this.state.ingredient3} onChange={this.handleOnChange3}/>
                         </label>
-                        <input type="submit" value="search" />
+                        <input className={"submit"} type="submit" value="search" />
                     </form >
                 </section>
                 </>
