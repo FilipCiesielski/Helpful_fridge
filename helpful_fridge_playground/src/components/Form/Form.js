@@ -84,7 +84,22 @@ handleOnChange1=e=>{
                     console.log("TU",this.state);
          return (
             <>
-                <div className={"search_result "}>
+                           <section className={"search_form"}>
+                    <form onSubmit={this.handleSubmit}>
+                        <label>ingredient
+                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
+                        </label>
+                        <label>ingredient
+                            <input  className={"input_style"}type="text" name="name" value={this.state.ingredient2} onChange={this.handleOnChange2}/>
+                        </label>
+                        <label>ingredient
+                            <input  className={"input_style"} type="text" name="name" value={this.state.ingredient3} onChange={this.handleOnChange3}/>
+                        </label>
+                        <input className={"submit"} type="submit" value="search" />
+                    </form >
+                </section>
+
+                <div className={"search_result"}>
                     <div className={"recipe_name"}    >
                         <ul>
 
@@ -109,21 +124,7 @@ handleOnChange1=e=>{
                         {(this.state.method===null)? null:this.state.method.map((met)=><p>{met}</p>)}
                     </div>
                     </div>
-                
-                <section className={"search_form"}>
-                    <form onSubmit={this.handleSubmit}>
-                        <label>ingredient
-                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
-                        </label>
-                        <label>ingredient
-                            <input  className={"input_style"}type="text" name="name" value={this.state.ingredient2} onChange={this.handleOnChange2}/>
-                        </label>
-                        <label>ingredient
-                            <input  className={"input_style"} type="text" name="name" value={this.state.ingredient3} onChange={this.handleOnChange3}/>
-                        </label>
-                        <input className={"submit"} type="submit" value="search" />
-                    </form >
-                </section>
+
                 </>
         )
     }
