@@ -5,7 +5,7 @@ import "./Form.scss"
 
 class Form extends Component{
     state={
-    response:null,
+        response:null,
         recipe:"",
         name:"",
         ingredient1:"",
@@ -28,7 +28,7 @@ class Form extends Component{
                 })
         }
 
-handleOnClick=(strMeal)=>{
+        handleOnClick=(strMeal)=>{
         fetch(`https://www.themealdb.com/api/json/v2/8673533/search.php?s=${strMeal}`)
             .then(resp => resp.json())
             .then(resp => {this.setState({recipe: resp},()=>{
@@ -65,9 +65,9 @@ handleOnClick=(strMeal)=>{
 
 }
 
-handleOnChange1=e=>{
+    handleOnChange1=e=>{
         this.setState({ ingredient1:e.target.value})
-}
+    }
     handleOnChange2=e=>{
         this.setState({ ingredient2:e.target.value})
     }
@@ -84,7 +84,7 @@ handleOnChange1=e=>{
                     console.log("TU",this.state);
          return (
             <>
-                           <section className={"search_form"}>
+                <section className={"search_form"}>
                     <form onSubmit={this.handleSubmit}>
                         <label>ingredient
                             <input className={"input_style"} type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
@@ -125,7 +125,7 @@ handleOnChange1=e=>{
                     </div>
                     </div>
 
-                </>
+            </>
         )
     }
 }

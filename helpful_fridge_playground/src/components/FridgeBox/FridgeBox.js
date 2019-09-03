@@ -41,9 +41,6 @@ class Fridge extends Component {
 
         }
         console.log("elo")
-// this.setState({class1:"doorOpen ",class2:"hidden"});
-
-        // this.setState({class2:"hidden",showForm:true});
 
         console.log(this.myRef.current)
     }

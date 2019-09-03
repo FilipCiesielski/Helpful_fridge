@@ -6,7 +6,7 @@
 }
 
 .center{
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image:url("./Helpful.png");
+    background-image:url("images/Helpful.png");
     position: relative;
     margin-left: 60px;
 
@@ -32,7 +32,7 @@
     height: 4.2rem;
   background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("./snow.png");
+    background-image: url("images/snow.png");
     box-sizing: border-box;
     margin-left: -60px;
     border-radius: 50%;
