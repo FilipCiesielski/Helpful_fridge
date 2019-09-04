@@ -19,15 +19,16 @@ class Form extends Component{
 
 
 
+    fetchData = () => {
+        fetch(`https://www.themealdb.com/api/json/v2/8673533/filter.php?i=${this.state.ingredient1},${this.state.ingredient2},${this.state.ingredient3}`)
+            .then(resp => resp.json())
+            .then(resp => {
+                console.log(this.props)
+                this.setState({response: resp})
+                this.props.onFormSubmit(resp); // to jest funkcja z FridgeBox
+            })
+    }
 
-        fetchData = () => {
-            fetch(`https://www.themealdb.com/api/json/v2/8673533/filter.php?i=${this.state.ingredient1},${this.state.ingredient2},${this.state.ingredient3}`)
-                .then(resp => resp.json())
-                .then(resp => {
-                    console.log(resp)
-                    this.setState({response: resp})
-                })
-        }
 
         handleOnClick=(strMeal)=>{
         fetch(`https://www.themealdb.com/api/json/v2/8673533/search.php?s=${strMeal}`)
@@ -82,12 +83,11 @@ class Form extends Component{
     };
 
     render(){
-                    console.log("TU",this.state);
         let responseResult;
         if (this.state.response===null){
             responseResult=null
         }else if (this.state.response.meals===null){
-            responseResult= <h1>Nie znaleziono</h1>
+            responseResult= <h1>Not found</h1>
 
         }else{
             responseResult= this.state.response.meals.map((meal)=><li onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)

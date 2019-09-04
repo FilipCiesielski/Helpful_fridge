@@ -5,11 +5,21 @@ import Form from "../Form/Form";
 
 
 class FridgeBox extends Component{
+    state={
+        response:null,
+    }
+    updateState = (data) =>{
+        this.setState({
+            response: data
+        })
+    }
+
     render() {
         return (
-       <>
-            <Title/>
-            <Fridge/>
+            <>
+                <Title/>
+                <Fridge onFormSubmit={this.updateState}/>
+                <h1>{(this.state.response!==null)&&this.state.response.meals[0].strMeal}</h1>
             </>
         )
     }
@@ -52,7 +62,7 @@ class Fridge extends Component {
                     <span className={this.state.class2}>SWEG</span>
                     <div className={this.state.class3}></div>
                     <div className="door" ref={this.myRef}  onClick={this.handleOpenDoor}></div>
-                    {this.state.showForm && <Form/>}
+                    {this.state.showForm && <Form onFormSubmit={this.props.onFormSubmit}/>}
                 </div>
 
                 </div>
