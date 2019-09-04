@@ -24,6 +24,7 @@ class Form extends Component{
             fetch(`https://www.themealdb.com/api/json/v2/8673533/filter.php?i=${this.state.ingredient1},${this.state.ingredient2},${this.state.ingredient3}`)
                 .then(resp => resp.json())
                 .then(resp => {
+                    console.log(resp)
                     this.setState({response: resp})
                 })
         }
@@ -82,6 +83,15 @@ class Form extends Component{
 
     render(){
                     console.log("TU",this.state);
+        let responseResult;
+        if (this.state.response===null){
+            responseResult=null
+        }else if (this.state.response.meals===null){
+            responseResult= <h1>Nie znaleziono</h1>
+
+        }else{
+            responseResult= this.state.response.meals.map((meal)=><li onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
+        }
          return (
             <>
                 <section className={"search_form"}>
@@ -104,8 +114,7 @@ class Form extends Component{
                         <ul>
 
                     {
-
-                        (this.state.response===null)?null :this.state.response.meals.map((meal)=><li onClick={()=>this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
+                    responseResult
 
                     }
                         </ul>

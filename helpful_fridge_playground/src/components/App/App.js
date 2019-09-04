@@ -5,6 +5,7 @@ import Navigation from "../Navigation/Navigation";
 import LandingPage from "../LandingPage/LandingPage";
 import AboutMe from "../About/AboutMe";
 import {HashRouter,Switch,Route} from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const NotFound=()=> <h2>Houston, We Have a Problem 404</h2>;
 
@@ -21,6 +22,7 @@ function App() {
         <Route component={NotFound}/>
         </Switch>
       </div>
+          <Footer/>
       </HashRouter>
   );
 }
