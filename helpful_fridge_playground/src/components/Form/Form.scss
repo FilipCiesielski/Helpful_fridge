@@ -1,33 +1,6 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
-
-
-.search_result{
-  width: 100%;
-  height: 500px;
-
-
-  }
-
-.recipe_name{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  list-style-type: none;
-  color: ghostwhite;
-
-}
-
-.list{
-  list-style-type: none;
-  color: ghostwhite;
-
-}
-.method{
-  color: ghostwhite;
-}
-
 .search_form{
  width: 100%;
   height: 500px;

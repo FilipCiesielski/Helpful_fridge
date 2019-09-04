@@ -3,30 +3,92 @@ import "./FridgeBox.scss"
 import Slider from "../Slider/Slider";
 import Form from "../Form/Form";
 
-
 class FridgeBox extends Component{
     state={
         response:null,
+        ingredients:null,
+        measure:null,
+        method:null,
+        recipe:"",
     }
     updateState = (data) =>{
         this.setState({
             response: data
         })
     }
+    handleOnClick=(strMeal)=>{
+        fetch(`https://www.themealdb.com/api/json/v2/8673533/search.php?s=${strMeal}`)
+            .then(resp => resp.json())
+            .then(resp => {this.setState({recipe: resp},()=>{
+                console.log(this.state.recipe.meals[0] )
+                const meal = this.state.recipe.meals[0]
+                let newIngerdiens=[];
+                for (let item in meal){
+                    if((item.toString().indexOf("strIngredient")!==-1 )&&(meal[item]!==null)&&(meal[item]!=="")){
+                        console.log(item,meal[item])
+                        newIngerdiens.push(meal[item])
+                    }
+                    this.setState({ingredients:newIngerdiens})
+                }
+                let newMeasure=[];
+                for (let item in meal){
+                    if((item.toString().indexOf("strMeasure")!==-1)&&(meal[item]!==null)&&(meal[item]!=="")){
+                        console.log(item,meal[item])
+                        newMeasure.push(meal[item])
+                    }
+                    this.setState({measure:newMeasure})
+                }
+                let newMethod=[];
+                for (let item in meal){
+                    if((item.toString().indexOf("strInstructions")!==-1)&&(meal[item]!==null)&&(meal[item]!=="")){
+                        console.log(item,meal[item])
+                        newMethod.push(meal[item])
+                    }
+                    this.setState({method:newMethod})
+                }
+            })
+            })}
 
-    render() {
+            render() {
+        let responseResult;
+        if (this.state.response===null){
+            responseResult=null
+        }else if (this.state.response.meals===null){
+            responseResult= <h1>Not found</h1>
+        }else{
+            responseResult= this.state.response.meals.map((meal)=><li onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
+        }
         return (
             <>
                 <Title/>
                 <Fridge onFormSubmit={this.updateState}/>
-                <h1>{(this.state.response!==null)&&this.state.response.meals[0].strMeal}</h1>
+                <div className={"search_result"}>
+                    <div className={"recipe_name"}    >
+                        <ul>
+                            ​
+                            {
+                                responseResult
+                            }
+                        </ul>
+                    </div>
+                    <div className={"ingredient_list"}>
+                        <ul className={"list"}>
+                            {(this.state.ingredients===null)? null:this.state.ingredients.map((ingr)=><li>{ingr}</li>)}
+                        </ul>
+                    </div>
+                    <div className={"measure_list"}>
+                        <ul className={"list"}>
+                            {(this.state.measure===null)? null:this.state.measure.map((mea)=><li>{mea}</li>)}
+                        </ul>
+                    </div>
+                    <div className={"method"}>
+                        {(this.state.method===null)? null:this.state.method.map((met)=><p>{met}</p>)}
+                    </div>
+                </div>
             </>
         )
     }
 }
-
-
-
 
 class Fridge extends Component {
     constructor(props){

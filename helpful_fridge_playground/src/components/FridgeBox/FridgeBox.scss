@@ -263,3 +263,36 @@ span {
     }
 
 
+.search_result{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+
+
+}
+
+.recipe_name{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  list-style-type: none;
+  color: ghostwhite;
+
+}
+
+.list{
+  list-style-type: none;
+  color: ghostwhite;
+
+}
+.method{
+  color: ghostwhite;
+  width: 50%;
+}
+.measure_list{
+  width: 20%;
+}
+.ingredient_list{
+  width: 20%;
+}
