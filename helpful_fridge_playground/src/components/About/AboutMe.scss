@@ -7,15 +7,77 @@ height: 400px;
 
 }
 .describe{
-  width: 30%;
+  width: 20%;
   height: 300px;
-  border: 2px solid red;
   display: flex;
-  justify-content: center;
-}
-.about_me{
-  justify-content: space-between;
-  display: flex;
-  padding-top: 100px;
+  justify-content:flex-end;
 
+
+  &:nth-of-type(1){
+
+    background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+
+  }
+  &:nth-of-type(3) {
+
+        background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    margin-left: 50px;
+      }
+
+  }
+
+
+.cv{
+  width: 20%;
+  height: 300px;
+    background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.big{
+  width: 50%;
+  height: 750px;
+  justify-content: center;
+
+    background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_me{
+  justify-content: center;
+  display: flex;
+ align-items: center;
+  padding-top: 2.5rem;
+
+}
+.hidden{
+  display: none;
+}
+.my_person{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  color:ghostwhite;
+}
+.invisible{
+  width: 50%;
+  height: 750px;
+  justify-content: center;
+
+  background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

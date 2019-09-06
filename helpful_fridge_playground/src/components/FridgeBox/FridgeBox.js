@@ -2,6 +2,11 @@ import React, {Component} from "react";
 import "./FridgeBox.scss"
 import Slider from "../Slider/Slider";
 import Form from "../Form/Form";
+const styleMethod={
+border: "2px solid red",
+borderRadius: "5px",
+padding: "5px"
+}
 
 class FridgeBox extends Component{
     state={
@@ -10,7 +15,9 @@ class FridgeBox extends Component{
         measure:null,
         method:null,
         recipe:"",
+
     }
+
     updateState = (data) =>{
         this.setState({
             response: data
@@ -51,40 +58,49 @@ class FridgeBox extends Component{
 
             render() {
         let responseResult;
+        let recipeResult;
         if (this.state.response===null){
             responseResult=null
         }else if (this.state.response.meals===null){
-            responseResult= <h1>Not found</h1>
+            responseResult= <h1>Nothing found, please try again.</h1>
         }else{
-            responseResult= this.state.response.meals.map((meal)=><li onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
-        }
-        return (
-            <>
-                <Title/>
-                <Fridge onFormSubmit={this.updateState}/>
-                <div className={"search_result"}>
-                    <div className={"recipe_name"}    >
-                        <ul>
-                            ​
-                            {
-                                responseResult
-                            }
-                        </ul>
-                    </div>
+            responseResult= this.state.response.meals.map((meal)=> <li key={meal.idMeal} onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
+             recipeResult=<>
+                <div className={"recipe_box"}>
                     <div className={"ingredient_list"}>
                         <ul className={"list"}>
-                            {(this.state.ingredients===null)? null:this.state.ingredients.map((ingr)=><li>{ingr}</li>)}
+                            {(this.state.ingredients===null)? null:this.state.ingredients.map((ingr,index)=><li key={index}>{ingr}</li>)}
                         </ul>
                     </div>
                     <div className={"measure_list"}>
                         <ul className={"list"}>
-                            {(this.state.measure===null)? null:this.state.measure.map((mea)=><li>{mea}</li>)}
+                            {(this.state.measure===null)? null:this.state.measure.map((mea,index)=><li key={index}>{mea}</li>)}
                         </ul>
                     </div>
-                    <div className={"method"}>
-                        {(this.state.method===null)? null:this.state.method.map((met)=><p>{met}</p>)}
-                    </div>
                 </div>
+                <div className={"method"}>
+            {(this.state.method===null)? null:this.state.method.map((met,index)=><p key={index}>{met}</p>)}</div>
+
+
+
+            </>
+        };
+        return (
+            <>
+                <Title/>
+                <div className={"cold"}>
+                <Fridge onFormSubmit={this.updateState}/>
+                <div className={"search_result"}>
+                <ul className={"name_list"}>
+                   {responseResult}
+
+
+                </ul>
+                   <> {recipeResult}</>
+                 </div>
+
+                </div>
+
             </>
         )
     }
