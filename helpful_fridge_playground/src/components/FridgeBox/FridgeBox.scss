@@ -330,15 +330,18 @@ span {
 
 }
 .method{
-  color: ghostwhite;
+  p{
+    font-size: 1.2rem;
+
+  }
+  color: red;
   width: 100%;
   align-items: center;
   text-align: justify;
    background-color: map_get($colors,"violet");
     border:1px solid map_get($colors,"violet");
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 5px;
-font-size: 1rem;
 }
 
 

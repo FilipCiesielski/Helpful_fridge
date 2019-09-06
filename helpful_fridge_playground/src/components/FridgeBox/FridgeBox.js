@@ -90,7 +90,7 @@ class FridgeBox extends Component{
 
 
                 </ul>
-                   <> {recipeResult}</>
+                    {recipeResult}
                  </div>
 
                 </div>
