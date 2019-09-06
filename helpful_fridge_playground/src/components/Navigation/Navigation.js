@@ -20,7 +20,7 @@ function Navigation() {
     return(
         <div className={"navigation"}>
         <nav className={"center container"}>
-            <div className={"logo rotate-center"}></div>
+            <div className={"logo rotate-center"}>Helpful Fridge</div>
 
     <ul className={"nav_list"}>
         <li><NavLink style={styleNo} activeStyle={styleActive} exact to={"/"}>Main</NavLink></li>

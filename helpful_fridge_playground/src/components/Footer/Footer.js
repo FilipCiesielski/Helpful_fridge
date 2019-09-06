@@ -6,10 +6,12 @@ import {NavLink} from "react-router-dom"
 class Footer extends Component{
     render() {
         return (
-            <div className={""}>
-                <footer className={"footer"}>
-                </footer>
-            </div>
+<footer className={"container"}>
+                              <div className={"footer "} >
+                              <div>&copy; Created by Filip Ciesielski</div>
+                              <div>frfrfrf</div>
+                                  </div>
+</footer>
         )
     }
 }

@@ -4,15 +4,18 @@
 header{
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 25rem;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   .focus-in-expand {
     animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
     justify-content: center;
     color: ghostwhite;
     font-size: 5rem;
+    padding-bottom: 6.5rem;
+    padding-top: 6.5rem;
 
 
     }
@@ -44,20 +47,26 @@ header{
   }
 
 }
+p{
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: ghostwhite;
+}
 
 .main{
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   justify-content: center;
   align-items: center;
+  padding-top: 6.5rem;
 
   .go_to_fridge{
     display: flex;
    justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 100px;
+    width: 12.5rem;
+    height: 6.25rem;
     text-align: center;
     border-radius: 20px;
     font-size: 2rem;

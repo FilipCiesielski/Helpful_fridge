@@ -23,6 +23,7 @@ function App() {
         <Route path={"/fridge"} component={FridgeBox}/>
         <Route component={NotFound}/>
         </Switch>
+
       </div>
           <Footer/>
       </HashRouter>

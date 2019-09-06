@@ -19,9 +19,13 @@
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image:url("images/Helpful.png");
+    font-size: 2rem;
+    font-weight: bolder;
+    //color: map_get($colors,"blue");
+    color: ghostwhite;
     position: relative;
     margin-left: 60px;
+
 
 
   }
@@ -37,6 +41,7 @@
     margin-left: -60px;
     border-radius: 50%;
     animation: rotate-center 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  margin-top: 30px;
 
 }
   @-webkit-keyframes rotate-center {

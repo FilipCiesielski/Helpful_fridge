@@ -19,6 +19,9 @@ class LandingPage extends Component{
             <>
                                <header>
                 <h1 className={"focus-in-expand"}>Helpful Fridge</h1>
+                                   <p> *click on the fridge to open it*</p>
+                                   <p>*enter your ingredients in the search field*</p>
+                                   <p>*click search to find recipes*</p>
             </header>
             <section className={"main"}>
             <div className={"go_to_fridge"}><NavLink style={styleNo}  activeStyle={styleActive} to={"/fridge"}>Let's try!</NavLink></div>

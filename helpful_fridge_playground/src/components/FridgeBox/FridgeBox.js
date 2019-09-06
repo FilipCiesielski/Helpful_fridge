@@ -1,12 +1,6 @@
 import React, {Component} from "react";
 import "./FridgeBox.scss"
-import Slider from "../Slider/Slider";
 import Form from "../Form/Form";
-const styleMethod={
-border: "2px solid red",
-borderRadius: "5px",
-padding: "5px"
-}
 
 class FridgeBox extends Component{
     state={
