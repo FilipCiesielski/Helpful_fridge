@@ -188,7 +188,7 @@ span {
       //font-weight: bold;
       font-family: 'Lexend Zetta', sans-serif;
       padding-top: 4.4rem;
-      padding-left: 3.5rem;
+      padding-left: 2.8rem;
       z-index: 2;
 
       animation: scale-in-hor-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
@@ -245,7 +245,7 @@ span {
       border: 1px solid silver;
       box-sizing: border-box;
       margin-top: 11.9rem;
-      margin-left: 7.5rem;
+      margin-left: 7rem;
       z-index: 2;
       animation: scale-in-hor-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
     }
@@ -332,16 +332,19 @@ span {
 .method{
   p{
     font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: map_get($colors,"violet");
+     border:1px solid map_get($colors,"violet");
+    text-align: justify;
 
   }
-  color: red;
   width: 100%;
   align-items: center;
-  text-align: justify;
-   background-color: map_get($colors,"violet");
-    border:1px solid map_get($colors,"violet");
-  border-radius: 5px;
-  padding: 5px;
+
+
+
+
 }
 
 

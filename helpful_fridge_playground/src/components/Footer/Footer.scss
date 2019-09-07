@@ -1,14 +1,26 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
-//.footer {
-//  height: 2rem;
-//  position: fixed;
-//  bottom: 0;
-//  justify-content: space-between;
-//  align-items: center;
-//  background-color: map_get($colors,"violet");
-//  width: 100%;
-//  display: flex;
-//}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 2rem;
+  position: fixed;
+bottom: 0;
+  background-color: map_get($colors,"Dblue");
+  //color: map_get($colors,"blue");
+  color: ghostwhite;
+  font-weight: bold;
+  text-align: center;
+width:inherit;
+  .font-awesome{
+    //color: map_get($colors,"blue");
+    color: ghostwhite;
+    font-size: 1.8rem;
+
+  }
+}
 

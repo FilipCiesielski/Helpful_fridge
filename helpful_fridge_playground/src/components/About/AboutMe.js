@@ -40,7 +40,10 @@ class AboutMe extends Component{
                 <div className= {this.state.certificateSize} onMouseLeave={this.handleOnLeave} onMouseEnter={this.handleOnEnter}></div>
                </section>
                 <section className={this.state.myPerson}>
-                    <h3>Tu mój opis</h3>
+                    <h3>Hello!
+                        My name is Filip.
+                        I am a chef who decided to change his profession. These are my first steps in programming, I have a lot of energy and willingness to keep learning and improving my skills.
+                        This is my first project that I created at the end of the JavaScript bootcamp, using all the knowledge I gained during the course.</h3>
                 </section>
 </>
                  )
