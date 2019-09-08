@@ -18,13 +18,13 @@ class Footer extends Component{
     <div className={"footer"} >
                               {/*<div>&copy; Created by FILIP CIESIELSKI</div>*/}
 
-    <a href='https://www.instagram.com/feel_my_passion/?hl=pl'>
+    <a target={"_blank"} href='https://www.instagram.com/feel_my_passion/?hl=pl'>
         <FontAwesomeIcon className ='font-awesome' icon={faInstagram} />
     </a>
-                              <a href='https://github.com/FilipCiesielski'>
+                              <a target={"_blank"} href='https://github.com/FilipCiesielski'>
                                   <FontAwesomeIcon className ='font-awesome' icon={faGithub} />
                               </a>
-        <a target="_blank" href='https://www.linkedin.com/in/filipciesielski' >
+        <a target={"_blank"} href='https://www.linkedin.com/in/filipciesielski' >
             <FontAwesomeIcon className ='font-awesome' icon={faLinkedin} /></a>
 
                               </div>
