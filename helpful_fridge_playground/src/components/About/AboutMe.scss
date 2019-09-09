@@ -15,7 +15,7 @@ height: 400px;
 
   &:nth-of-type(1){
 
-    background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+    background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +37,7 @@ height: 400px;
 .cv{
   width: 20%;
   height: 300px;
-    background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+    background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,6 +52,16 @@ height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+.bigCV{
+  width: 50%;
+  height: 750px;
+  justify-content: center;
+
+  background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about_me{
@@ -76,7 +86,7 @@ height: 400px;
   height: 750px;
   justify-content: center;
 
-  background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+  background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0002.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

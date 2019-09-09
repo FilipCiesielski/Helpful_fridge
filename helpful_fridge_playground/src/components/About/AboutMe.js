@@ -19,7 +19,7 @@ class AboutMe extends Component{
 
     }
     handleOnEnterCv=()=>{
-        this.setState({cvSize:"big",certificateSize:"hidden",myPerson:"hidden",invisibleCv:"invisible"})
+        this.setState({cvSize:"bigCV",certificateSize:"hidden",myPerson:"hidden",invisibleCv:"invisible"})
 
     }
     handleOnLeaveCv=()=>{

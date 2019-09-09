@@ -15,7 +15,7 @@ class Footer extends Component{
 
 <footer className={"footer"}>
 <div className={"container foot"}>
-                              {/*<div>&copy; Created by FILIP CIESIELSKI</div>*/}
+                              <div className={"copy"}>&copy; Created by Filip Ciesielski</div>
 
     <a target={"_blank"} href='https://www.instagram.com/feel_my_passion/?hl=pl'>
         <FontAwesomeIcon className ='font-awesome' icon={faInstagram} />

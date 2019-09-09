@@ -20,7 +20,7 @@ class LandingPage extends Component{
                                <header>
                 <h1 className={"focus-in-expand"}>Helpful Fridge</h1>
                                    <p> *click on the fridge to open it*</p>
-                                   <p>*enter your ingredients in the search field*</p>
+                                   <p>*enter your ingredients in the search field e.g. milk, eggs, butter*</p>
                                    <p>*click search to find recipes*</p>
             </header>
             <section className={"main"}>
