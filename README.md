@@ -1,2 +1,3 @@
 # Helpful_fridge
-Hello, This is my first project in react. Helpful_fridge will help you find recipes from products that you have in the fridge. Open the fridge, enter the ingredients and search. Have fun and good luck in cooking.
+Hello, This is my first project in React.js.
+Helpful_fridge will help you find recipes from products that you have in the fridge. Open the fridge, enter the ingredients and search. Have fun and good luck in cooking.
