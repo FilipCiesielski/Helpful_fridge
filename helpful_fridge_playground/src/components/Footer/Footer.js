@@ -13,9 +13,8 @@ class Footer extends Component{
     render() {
         return (
 
-<footer className={"container"}>
-
-    <div className={"footer"} >
+<footer className={"footer"}>
+<div className={"container foot"}>
                               {/*<div>&copy; Created by FILIP CIESIELSKI</div>*/}
 
     <a target={"_blank"} href='https://www.instagram.com/feel_my_passion/?hl=pl'>
@@ -27,8 +26,7 @@ class Footer extends Component{
         <a target={"_blank"} href='https://www.linkedin.com/in/filipciesielski' >
             <FontAwesomeIcon className ='font-awesome' icon={faLinkedin} /></a>
 
-                              </div>
-
+</div>
 
 </footer>
         )
