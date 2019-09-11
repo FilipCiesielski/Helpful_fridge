@@ -61,6 +61,7 @@
       font-family: 'Lexend Zetta', sans-serif;
       display: flex;
         justify-content: center;
+        cursor: pointer;
 
       transform-origin: left;
       /*Speed of the Door animation*/
@@ -285,6 +286,7 @@ span {
 
   }
   .name_list li:hover{
+    cursor:pointer;
     background-color: map_get($colors,"sun");
   }
   h1{
@@ -342,6 +344,7 @@ span {
   width: 100%;
   align-items: center;
   margin-bottom: 3rem;
+  margin-right: 5%;
 
 
 

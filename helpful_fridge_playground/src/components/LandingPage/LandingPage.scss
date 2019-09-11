@@ -71,7 +71,9 @@ p{
     border-radius: 20px;
     font-size: 2rem;
     font-weight: bold;
-    color: ghostwhite;  background-color: map_get($colors,"sun")
+    color: ghostwhite;
+    background-color: map_get($colors,"sun");
+    margin-bottom: 3rem;
 
   }
 }
