@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Helpful_fridge/precache-manifest.28c4c64a660d727046f0cd6cb9add090.js"
+  "/Helpful_fridge/precache-manifest.afa8686c3ca828fb9af11ab039853269.js"
 );
 
 self.addEventListener('message', (event) => {

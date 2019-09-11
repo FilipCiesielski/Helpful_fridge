@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2b1452018ef8aa2a64168cfcf24d0f2",
+    "revision": "1e304bd7d3b22111b8d60d83b5cf261f",
     "url": "/Helpful_fridge/index.html"
   },
   {
-    "revision": "530879f894a939381d24",
-    "url": "/Helpful_fridge/static/css/main.889c7666.chunk.css"
+    "revision": "da93f725a1752847831e",
+    "url": "/Helpful_fridge/static/css/main.aed0d878.chunk.css"
   },
   {
     "revision": "c62c9bed3335b29a61fc",
     "url": "/Helpful_fridge/static/js/2.a07ce42e.chunk.js"
   },
   {
-    "revision": "530879f894a939381d24",
+    "revision": "da93f725a1752847831e",
     "url": "/Helpful_fridge/static/js/main.0cb1f4d6.chunk.js"
   },
   {
