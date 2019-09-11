@@ -1,4 +1,3 @@
-
 import React,{Component} from 'react';
 import "./Navigation.scss"
 import {NavLink} from "react-router-dom"
@@ -18,18 +17,17 @@ color: "#3498db",
 function Navigation() {
 
     return(
-        <div className={"navigation"}>
-        <nav className={"center container"}>
-            <div className={"logo rotate-center"}>Helpful Fridge</div>
-
-    <ul className={"nav_list"}>
-        <li><NavLink style={styleNo} activeStyle={styleActive} exact to={"/"}>Main</NavLink></li>
-        <li><NavLink style={styleNo} activeStyle={styleActive} to={"/about"}>About me</NavLink></li>
-        <li><NavLink style={styleNo}  activeStyle={styleActive} to={"/fridge"}>Go to fridge</NavLink></li>
-    </ul>
+   <div className={"navigation"}>
+    <nav className={"center container"}>
+        <div className={"logo rotate-center"}>Helpful Fridge</div>
+        <ul className={"nav_list"}>
+            <li><NavLink style={styleNo} activeStyle={styleActive} exact to={"/"}>Main</NavLink></li>
+            <li><NavLink style={styleNo} activeStyle={styleActive} to={"/about"}>About me</NavLink></li>
+            <li><NavLink style={styleNo}  activeStyle={styleActive} to={"/fridge"}>Go to fridge</NavLink></li>
+          </ul>
 
     </nav>
-    </div>
+   </div>
     )
 }
 

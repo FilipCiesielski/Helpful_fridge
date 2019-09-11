@@ -59,7 +59,8 @@ class FridgeBox extends Component{
             responseResult= <h1>Nothing found, please try again.</h1>
         }else{
             responseResult= this.state.response.meals.map((meal)=> <li key={meal.idMeal} onClick={() => this.handleOnClick(meal.strMeal)}>{meal.strMeal}</li>)
-             recipeResult=<>
+            recipeResult=
+           <>
                 <div className={"recipe_box"}>
                     <div className={"ingredient_list"}>
                         <ul className={"list"}>
@@ -72,28 +73,24 @@ class FridgeBox extends Component{
                         </ul>
                     </div>
                 </div>
-                <div className={"method"}>
-            {(this.state.method===null)? null:this.state.method.map((met,index)=><p key={index}>{met}</p>)}</div>
-
-
-
+             <div className={"method"}>
+            {(this.state.method===null)? null:this.state.method.map((met,index)=><p key={index}>{met}</p>)}
+             </div>
             </>
         };
         return (
             <>
                 <Title/>
-                <div className={"cold"}>
+           <div className={"cold"}>
                 <Fridge onFormSubmit={this.updateState}/>
-                <div className={"search_result"}>
+              <div className={"search_result"}>
                 <ul className={"name_list"}>
                    {responseResult}
-
-
                 </ul>
                     {recipeResult}
-                 </div>
+               </div>
 
-                </div>
+           </div>
 
             </>
         )
