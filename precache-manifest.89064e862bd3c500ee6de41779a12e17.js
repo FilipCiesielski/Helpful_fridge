@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4525307176217ea62e1e43362375c03c",
+    "revision": "fe13b50bdeb5bca03f7306bc6f0a6884",
     "url": "/Helpful_fridge/index.html"
   },
   {
-    "revision": "8801aa4998e2353538b1",
-    "url": "/Helpful_fridge/static/css/main.2eedda92.chunk.css"
+    "revision": "647ffc4058aa4c54dab3",
+    "url": "/Helpful_fridge/static/css/main.56b6f838.chunk.css"
   },
   {
-    "revision": "c62c9bed3335b29a61fc",
-    "url": "/Helpful_fridge/static/js/2.a07ce42e.chunk.js"
+    "revision": "d0c003eb45754c957d1a",
+    "url": "/Helpful_fridge/static/js/2.9aa03c17.chunk.js"
   },
   {
-    "revision": "8801aa4998e2353538b1",
-    "url": "/Helpful_fridge/static/js/main.0cb1f4d6.chunk.js"
+    "revision": "647ffc4058aa4c54dab3",
+    "url": "/Helpful_fridge/static/js/main.a82be7e0.chunk.js"
   },
   {
     "revision": "97dcab95d4983d309ce3",

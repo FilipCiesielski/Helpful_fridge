@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Helpful_fridge/static/css/main.2eedda92.chunk.css",
-    "main.js": "/Helpful_fridge/static/js/main.0cb1f4d6.chunk.js",
-    "main.js.map": "/Helpful_fridge/static/js/main.0cb1f4d6.chunk.js.map",
+    "main.css": "/Helpful_fridge/static/css/main.56b6f838.chunk.css",
+    "main.js": "/Helpful_fridge/static/js/main.a82be7e0.chunk.js",
+    "main.js.map": "/Helpful_fridge/static/js/main.a82be7e0.chunk.js.map",
     "runtime~main.js": "/Helpful_fridge/static/js/runtime~main.13569a96.js",
     "runtime~main.js.map": "/Helpful_fridge/static/js/runtime~main.13569a96.js.map",
-    "static/js/2.a07ce42e.chunk.js": "/Helpful_fridge/static/js/2.a07ce42e.chunk.js",
-    "static/js/2.a07ce42e.chunk.js.map": "/Helpful_fridge/static/js/2.a07ce42e.chunk.js.map",
+    "static/js/2.9aa03c17.chunk.js": "/Helpful_fridge/static/js/2.9aa03c17.chunk.js",
+    "static/js/2.9aa03c17.chunk.js.map": "/Helpful_fridge/static/js/2.9aa03c17.chunk.js.map",
     "index.html": "/Helpful_fridge/index.html",
-    "precache-manifest.197a215ff5f7d3d661b0f8966bd9dfbc.js": "/Helpful_fridge/precache-manifest.197a215ff5f7d3d661b0f8966bd9dfbc.js",
+    "precache-manifest.89064e862bd3c500ee6de41779a12e17.js": "/Helpful_fridge/precache-manifest.89064e862bd3c500ee6de41779a12e17.js",
     "service-worker.js": "/Helpful_fridge/service-worker.js",
-    "static/css/main.2eedda92.chunk.css.map": "/Helpful_fridge/static/css/main.2eedda92.chunk.css.map",
+    "static/css/main.56b6f838.chunk.css.map": "/Helpful_fridge/static/css/main.56b6f838.chunk.css.map",
     "static/media/AboutMe.scss": "/Helpful_fridge/static/media/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0002.1b64b0c2.jpg"
   }
 }
