@@ -4,8 +4,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faInstagram, faLinkedin, faGithub} from '@fortawesome/fontawesome-free-brands'
 
 
-import {NavLink} from "react-router-dom"
-
 
 class Footer extends Component {
     render() {

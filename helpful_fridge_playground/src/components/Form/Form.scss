@@ -10,42 +10,42 @@
   text-align: center;
   padding: 1rem;
 
-}
 
-label {
-  color: ghostwhite;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 3.125rem;
-  margin-top: 2rem;
+  label {
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 3.125rem;
+    margin-top: 2rem;
 
-}
+  }
 
-.input_style {
-  width: 13rem;
-  border: none;
-  height: 2.5rem;
-  font-size: 1.2rem;
-  background-color: map_get($colors, "blue");
-  color: ghostwhite;
-  font-weight: bold;
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 1.6rem;
+  .input_style {
+    width: 13rem;
+    border: none;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background-color: map_get($colors, "blue");
+    color: ghostwhite;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1.6rem;
 
-}
+  }
 
-.submit {
-  width: 13rem;
-  border: none;
-  height: 3.2rem;
-  font-size: 1.2rem;
-  background-color: map_get($colors, "violet");
-  color: ghostwhite;
-  font-weight: bold;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 3.125rem;
+  .submit {
+    width: 13rem;
+    border: none;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    background-color: map_get($colors, "violet");
+    color: ghostwhite;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 3.125rem;
 
 
+  }
 }

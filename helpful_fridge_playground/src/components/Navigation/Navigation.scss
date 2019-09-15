@@ -3,77 +3,78 @@
 
 .navigation {
   background-color: (map_get($colors, "violet"));
-}
 
-.center {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: (map_get($colors, "violet"));
 
-  .logo {
+  .center {
+    height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    width: 20%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: map_get($colors, "blue");
-    //color: ghostwhite;
-    position: relative;
-    margin-left: 60px;
+    background-color: (map_get($colors, "violet"));
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 20%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      font-size: 2rem;
+      font-weight: bolder;
+      color: map_get($colors, "blue");
+      //color: ghostwhite;
+      position: relative;
+      margin-left: 60px;
 
 
-  }
-
-  .logo:before {
-    position: absolute;
-    content: "";
-    width: 4.2rem;
-    height: 4.2rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("images/snow.png");
-    box-sizing: border-box;
-    margin-left: -60px;
-    border-radius: 50%;
-    animation: rotate-center 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    margin-top: 30px;
-
-  }
-
-  @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
     }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+
+    .logo:before {
+      position: absolute;
+      content: "";
+      width: 4.2rem;
+      height: 4.2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("images/snow.png");
+      box-sizing: border-box;
+      margin-left: -60px;
+      border-radius: 50%;
+      animation: rotate-center 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      margin-top: 30px;
+
     }
-  }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
+
+    @-webkit-keyframes rotate-center {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
     }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+    @keyframes rotate-center {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
     }
+
+
+    .nav_list {
+      width: 35%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
   }
-
-
-  .nav_list {
-    width: 35%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
 }
