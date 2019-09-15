@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe13b50bdeb5bca03f7306bc6f0a6884",
+    "revision": "2b79a5ae930dfe026077034ec85b252e",
     "url": "/Helpful_fridge/index.html"
   },
   {
-    "revision": "647ffc4058aa4c54dab3",
-    "url": "/Helpful_fridge/static/css/main.56b6f838.chunk.css"
+    "revision": "ee107bf03c5026c25945",
+    "url": "/Helpful_fridge/static/css/main.57d14759.chunk.css"
   },
   {
     "revision": "d0c003eb45754c957d1a",
     "url": "/Helpful_fridge/static/js/2.9aa03c17.chunk.js"
   },
   {
-    "revision": "647ffc4058aa4c54dab3",
+    "revision": "ee107bf03c5026c25945",
     "url": "/Helpful_fridge/static/js/main.a82be7e0.chunk.js"
   },
   {
@@ -24,11 +24,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Helpful_fridge/static/media/CL_dyplom_podstawowy_FC-1.1aa5a345.png"
   },
   {
-    "revision": "f6593c37dec82085332ec2a899d3f772",
-    "url": "/Helpful_fridge/static/media/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.f6593c37.jpg"
+    "revision": "2b681629cc82b2f8a51583288e703533",
+    "url": "/Helpful_fridge/static/media/FilipCVHelpFulFridge2.2b681629.png"
   },
   {
-    "revision": "1b64b0c2ffdab7380a29cca2c93f19a5",
-    "url": "/Helpful_fridge/static/media/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0002.1b64b0c2.jpg"
+    "revision": "4bedbd24daa2f63b72b13b43cc72f6bc",
+    "url": "/Helpful_fridge/static/media/FilipCVHelpfulFridge1.4bedbd24.png"
   }
 ]);
