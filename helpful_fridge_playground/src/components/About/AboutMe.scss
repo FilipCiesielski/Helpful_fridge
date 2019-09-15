@@ -1,19 +1,20 @@
-.photo{
+.photo {
   width: 30%;
-height: 400px;
+  height: 400px;
   border: 2px solid red;
   display: flex;
   justify-content: center;
 
 }
-.describe{
+
+.describe {
   width: 20%;
   height: 300px;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
 
 
-  &:nth-of-type(1){
+  &:nth-of-type(1) {
 
     background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
     background-size: contain;
@@ -22,38 +23,40 @@ height: 400px;
     margin-right: 50px;
 
   }
+
   &:nth-of-type(3) {
-
-        background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    margin-left: 50px;
-      }
-
-  }
-
-
-.cv{
-  width: 20%;
-  height: 300px;
-    background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.big{
-  width: 50%;
-  height: 750px;
-  justify-content: center;
 
     background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 50px;
+  }
+
 }
-.bigCV{
+
+
+.cv {
+  width: 20%;
+  height: 300px;
+  background-image: url("images/Gray Simple Minimalist Resume (2)-1-2_pages-to-jpg-0001.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big {
+  width: 50%;
+  height: 750px;
+  justify-content: center;
+
+  background-image: url("images/CL_dyplom_podstawowy_FC-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bigCV {
   width: 50%;
   height: 750px;
   justify-content: center;
@@ -64,24 +67,27 @@ height: 400px;
   background-position: center;
 }
 
-.about_me{
+.about_me {
   justify-content: center;
   display: flex;
- align-items: center;
+  align-items: center;
   padding-top: 2.5rem;
 
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.my_person{
-  display:flex;
+
+.my_person {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 10rem;
-  color:ghostwhite;
+  color: ghostwhite;
 }
-.invisible{
+
+.invisible {
   width: 50%;
   height: 750px;
   justify-content: center;
@@ -91,12 +97,14 @@ height: 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
-h3{
+
+h3 {
   text-align: center;
   line-height: 2rem;
   font-size: 1.2rem;
   width: 75%;
 }
-section:nth-of-type(2){
+
+section:nth-of-type(2) {
   margin-bottom: 3rem;
 }

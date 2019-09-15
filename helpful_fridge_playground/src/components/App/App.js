@@ -11,23 +11,23 @@ const NotFound=()=> <h2>Houston, We Have a Problem 404</h2>;
 
 
 function App() {
-  return (
-      <HashRouter>
-        <Navigation/>
+    return (
+        <HashRouter>
+            <Navigation/>
 
-        <div className={"container"}>
-        <Switch>
+            <div className={"container"}>
+                <Switch>
 
-        <Route exact path={"/"} component={LandingPage}/>
-        <Route path={"/about"} component={AboutMe}/>
-        <Route path={"/fridge"} component={FridgeBox}/>
-        <Route component={NotFound}/>
-        </Switch>
+                    <Route exact path={"/"} component={LandingPage}/>
+                    <Route path={"/about"} component={AboutMe}/>
+                    <Route path={"/fridge"} component={FridgeBox}/>
+                    <Route component={NotFound}/>
+                </Switch>
 
-      </div>
-          <Footer/>
-      </HashRouter>
-  );
+            </div>
+            <Footer/>
+        </HashRouter>
+    );
 }
 
 export default App;

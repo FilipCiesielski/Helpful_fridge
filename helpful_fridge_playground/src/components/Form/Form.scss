@@ -1,30 +1,32 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
-.search_form{
- width: 100%;
+.search_form {
+  width: 100%;
   height: 31.25rem;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-text-align: center;
-padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 
 }
-label{
+
+label {
   color: ghostwhite;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 3.125rem;
- margin-top: 2rem;
+  margin-top: 2rem;
 
 }
-.input_style{
+
+.input_style {
   width: 13rem;
   border: none;
   height: 2.5rem;
-  font-size:1.2rem ;
-  background-color:map_get($colors,"blue");
+  font-size: 1.2rem;
+  background-color: map_get($colors, "blue");
   color: ghostwhite;
   font-weight: bold;
   border-radius: 5px;
@@ -33,17 +35,17 @@ label{
 
 }
 
-.submit{
+.submit {
   width: 13rem;
   border: none;
   height: 3.2rem;
-  font-size:1.2rem ;
-  background-color:map_get($colors,"violet");
+  font-size: 1.2rem;
+  background-color: map_get($colors, "violet");
   color: ghostwhite;
   font-weight: bold;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-top:3.125rem;
+  margin-top: 3.125rem;
 
 
 }

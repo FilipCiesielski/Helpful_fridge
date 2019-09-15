@@ -1,13 +1,14 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
-header{
+header {
   display: flex;
   width: 100%;
   height: 25rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .focus-in-expand {
     animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
@@ -18,7 +19,8 @@ header{
     padding-top: 6.5rem;
 
 
-    }
+  }
+
   @-webkit-keyframes focus-in-expand {
     0% {
       letter-spacing: -0.5em;
@@ -47,13 +49,14 @@ header{
   }
 
 }
-p{
+
+p {
   padding-top: 1rem;
   font-size: 1.5rem;
   color: ghostwhite;
 }
 
-.main{
+.main {
   display: flex;
   width: 100%;
   height: 6.25rem;
@@ -61,9 +64,9 @@ p{
   align-items: center;
   padding-top: 6.5rem;
 
-  .go_to_fridge{
+  .go_to_fridge {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     width: 12.5rem;
     height: 6.25rem;
@@ -72,7 +75,7 @@ p{
     font-size: 2rem;
     font-weight: bold;
     color: ghostwhite;
-    background-color: map_get($colors,"sun");
+    background-color: map_get($colors, "sun");
     margin-bottom: 3rem;
 
   }

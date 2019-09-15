@@ -2,18 +2,17 @@ import React, {Component} from "react";
 import "./Form.scss"
 
 
-
-class Form extends Component{
-    state={
-        response:null,
-        recipe:"",
-        name:"",
-        ingredient1:"",
-        ingredient2:"",
-        ingredient3:"",
-        ingredients:null,
-        measure:null,
-        method:null
+class Form extends Component {
+    state = {
+        response: null,
+        recipe: "",
+        name: "",
+        ingredient1: "",
+        ingredient2: "",
+        ingredient3: "",
+        ingredients: null,
+        measure: null,
+        method: null
     };
 
 
@@ -28,44 +27,46 @@ class Form extends Component{
     }
 
 
-    handleOnChange1=e=>{
-        this.setState({ ingredient1:e.target.value})
+    handleOnChange1 = e => {
+        this.setState({ingredient1: e.target.value})
     }
-    handleOnChange2=e=>{
-        this.setState({ ingredient2:e.target.value})
+    handleOnChange2 = e => {
+        this.setState({ingredient2: e.target.value})
     }
-    handleOnChange3=e=>{
-        this.setState({ ingredient3:e.target.value})
+    handleOnChange3 = e => {
+        this.setState({ingredient3: e.target.value})
     }
     handleSubmit = e => {
         e.preventDefault();
         this.fetchData()
-        console.log('Your ingredients ' + this.state.ingredient1,this.state.ingredient2,this.state.ingredient3);
+        console.log('Your ingredients ' + this.state.ingredient1, this.state.ingredient2, this.state.ingredient3);
     };
 
-    render(){
-              return (
+    render() {
+        return (
             <>
                 <section className={"search_form"}>
                     <form onSubmit={this.handleSubmit}>
                         <label>ingredient
-                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient1} onChange={this.handleOnChange1}/>
+                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient1}
+                                   onChange={this.handleOnChange1}/>
                         </label>
                         <label>ingredient
-                            <input  className={"input_style"}type="text" name="name" value={this.state.ingredient2} onChange={this.handleOnChange2}/>
+                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient2}
+                                   onChange={this.handleOnChange2}/>
                         </label>
                         <label>ingredient
-                            <input  className={"input_style"} type="text" name="name" value={this.state.ingredient3} onChange={this.handleOnChange3}/>
+                            <input className={"input_style"} type="text" name="name" value={this.state.ingredient3}
+                                   onChange={this.handleOnChange3}/>
                         </label>
-                        <input className={"submit"} type="submit" value="search" />
-                    </form >
+                        <input className={"submit"} type="submit" value="search"/>
+                    </form>
                 </section>
 
             </>
         )
     }
 }
-
 
 
 export default Form;

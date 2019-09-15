@@ -1,13 +1,14 @@
 @import "../../SCSS/generic/reset";
 @import "../../SCSS/elements/colors";
 
-.foot{
+.foot {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
 }
-.copy{
+
+.copy {
   color: ghostwhite;
   margin-right: 40rem;
 }
@@ -19,18 +20,19 @@
   justify-content: space-around;
   height: 2rem;
   position: fixed;
-bottom: 0;
-  background-color: map_get($colors,"Dblue");
+  bottom: 0;
+  background-color: map_get($colors, "Dblue");
   //color: map_get($colors,"blue");
   color: ghostwhite;
   font-weight: bold;
   text-align: center;
-width:100%;
-  .font-awesome{
+  width: 100%;
+
+  .font-awesome {
     //color: map_get($colors,"blue");
     color: ghostwhite;
     font-size: 1.8rem;
- margin-left: 2.5rem;
+    margin-left: 2.5rem;
 
   }
 }
